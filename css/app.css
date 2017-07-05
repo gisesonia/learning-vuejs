@@ -1,0 +1,178 @@
+body{
+    background-color: #130701;
+}
+.text-center {
+    text-align: center;
+}
+
+.healthbar {
+    width: 80%;
+    height: 40px;
+    background-color: #eee;
+    margin: auto;
+    transition: width 500ms;
+}
+
+.shock {
+    left: 200px;
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80% {
+    -moz-transform: translate3d(0,0, 0);
+    -ms-transform: translate3d(0,0, 0);
+    -webkit-transform: translate3d(0,0, 0);
+    transform: translate3d(0,0, 0);
+  }
+  40% {
+    -moz-transform: translate3d(-5px,-50px, 0);
+    -ms-transform: translate3d(-5px, -50px, 0);
+    -webkit-transform: translate3d(-5px, -50px, 0);
+    transform: translate3d(-5px, -50px, 0);
+  }
+  60% {
+    -moz-transform: translate3d(0, -15px, 0);
+    -ms-transform: translate3d(0, -15px, 0);
+    -webkit-transform: translate3d(0, -15px, 0);
+    transform: translate3d(0, -15px, 0);
+  }
+}
+
+.titulo {
+   color: #FFDD1B;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  -webkit-animation: glowtext 1.5s ease-in-out infinite alternate;
+  -moz-animation: glowtext 1.5s ease-in-out infinite alternate;
+  animation: glowtext 1.5s ease-in-out infinite alternate;
+}
+
+.glow {
+  -webkit-animation: dropshadow 1.5s ease-in-out infinite alternate;
+  -moz-animation: dropshadow 1.5s ease-in-out infinite alternate;
+  animation: dropshadow 1.5s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glowtext {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 20px #fff, 0 0 20px #FFDD1B, 0 0 50px #FFDD1B, 0 0 60px #FFDD1B, 0 0 80px #FFDD1B, 0 0 120px #FFDD1B;
+  }
+  to {
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #fff, 0 0 10px #FFDD1B, 0 0 15px #FFDD1B, 0 0 20px #FFDD1B, 0 0 30px #FFDD1B, 0 0 65px #FFDD1B;
+  }
+}
+
+@keyframes glowtext {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+  }
+  to {
+    text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 7px #fff, 0 0 10px #FFDD1B, 0 0 15px #FFDD1B, 0 0 20px #FFDD1B, 0 0 30px #FFDD1B, 0 0 65px #FFDD1B;
+  }
+}
+
+@-webkit-keyframes dropshadow {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+  }
+}
+
+@keyframes dropshadow {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FFDD1B, 0 0 70px #FFDD1B, 0 0 80px #FFDD1B, 0 0 100px #FFDD1B, 0 0 150px #FFDD1B;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FFDD1B, 0 0 35px #FFDD1B, 0 0 40px #FFDD1B, 0 0 50px #FFDD1B, 0 0 75px #FFDD1B;
+  }
+}
+
+.controls, .log {
+    margin-top: 30px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px solid #de9841;
+    background-color: #f3b465;
+}
+
+.turn {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.log ul {
+    list-style: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.log ul li {
+    margin: 5px;
+}
+
+.log ul .player-turn {
+    color:#725F19;
+    background-color: #FFD339;
+}
+
+.log ul .monster-turn {
+    color: #722D06;
+    background-color: #F2600D;
+}
+
+button {
+    font-size: 18px;
+    background-color: #eee;
+    padding: 12px;
+    box-shadow: 0 1px 1px #812311;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 10px;
+}
+
+#start-game {
+    background-color: #BF562D;
+}
+
+#start-game:hover {
+    background-color: #FF733C;
+}
+
+#attack {
+    background-color: #FF8157;
+}
+
+#attack:hover {
+    background-color: #F34824;
+}
+
+#special-attack {
+    background-color: #ffaf4f;
+}
+
+#special-attack:hover {
+    background-color: #ff9a2b;
+}
+
+#heal {
+    background-color: #FFF36A;
+}
+
+#heal:hover {
+    background-color: #E3F229;
+}
+
+#give-up {
+    background-color: #D89582;
+}
+
+#give-up:hover {
+    background-color: #F2A792;
+}
